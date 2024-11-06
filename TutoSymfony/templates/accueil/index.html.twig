@@ -1,9 +1,58 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Bienvenue sur la page d'Accueil{% endblock %}
 
 {% block body %}
-<div class="example-wrapper">
-    <h1>Accueil</h1>
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Bienvenue le site Project Symfony!</h1>
+        <p class="lead">Une plateforme moderne pour découvrir Symfony et ses fonctionnalités.</p>
+    </div>
+
+    <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Fonctionnalité 1</h5>
+                    <p class="card-text">Découvrez notre première fonctionnalité et profitez d’une expérience enrichie.</p>
+                    <a href="{{ path('app_a_propos') }}" class="btn btn-outline-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Fonctionnalité 2</h5>
+                    <p class="card-text">Notre deuxième fonctionnalité est conçue pour vous simplifier la vie.</p>
+                    <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Fonctionnalité 3</h5>
+                    <p class="card-text">Profitez de notre dernière nouveauté pour une expérience optimale.</p>
+                    <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-5">
+        <h2 class="mb-4">Ce que disent nos utilisateurs</h2>
+        <blockquote class="blockquote">
+            <p class="mb-0">"Une expérience incroyable, intuitive et très utile !"</p>
+        </blockquote>
+        <blockquote class="blockquote">
+            <p class="mb-0">"Je recommande vivement cette plateforme à tous les développeurs."</p>
+        </blockquote>
+    </div>
+
+    <div class="text-center mt-5">
+        <h2>Prêt à explorer Symfony ?</h2>
+        <p>Rejoignez-nous et découvrez toutes les possibilités qui s’offrent à vous.</p>
+        <a href="{{ path('app_contact') }}" class="btn btn-primary btn-lg">Rejoindre maintenant</a>
+    </div>
 </div>
 {% endblock %}
